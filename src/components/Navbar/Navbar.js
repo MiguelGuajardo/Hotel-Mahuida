@@ -18,7 +18,7 @@ export const Navbar = () => {
           <Link
             className="navbar_link"
             key={i}
-            to={`/${link.title.toLowerCase()}`}
+            to={`/HotelMahuida/${link.title.toLowerCase()}`}
           >{`${link.title}`}</Link>
         ))}
       </div>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const HospedajeSingle = () => {
   const urlSearchParams = window.location.pathname;
-  const idArr = Number(urlSearchParams.replace("/hospedaje/", ""));
+  const idArr = Number(urlSearchParams.replace("/HotelMahuida/hospedaje/", ""));
 
   const hospedaje = [
     {
@@ -41,7 +41,7 @@ export const HospedajeSingle = () => {
   return (
     <div className="hospedaje_single_container">
       <div className="hospedaje_single_image_container">
-        <Link to={"/hospedaje"} className="boton verde">
+        <Link to={"/HotelMahuida/hospedaje"} className="boton verde">
           Volver
         </Link>
         <p className="hospedaje_single_pathname">

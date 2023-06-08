@@ -18,13 +18,19 @@ export const App = () => {
         <Navbar />
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/inicio" element={<Home />} />
-        <Route path="/hospedaje" element={<Hospedaje />} />
-        <Route path="/hospedaje/:id" element={<HospedajeSingle />} />
-        <Route path="/gastronomia" element={<GastronomíaPage />} />
-        <Route path="/gastronomia/:id" element={<GastronomiaSingle />} />
-        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/HotelMahuida/" element={<Home />} />
+        <Route path="/HotelMahuida/inicio" element={<Home />} />
+        <Route path="/HotelMahuida/hospedaje" element={<Hospedaje />} />
+        <Route
+          path="/HotelMahuida/hospedaje/:id"
+          element={<HospedajeSingle />}
+        />
+        <Route path="/HotelMahuida/gastronomia" element={<GastronomíaPage />} />
+        <Route
+          path="/HotelMahuida/gastronomia/:id"
+          element={<GastronomiaSingle />}
+        />
+        <Route path="/HotelMahuida/galeria" element={<Galeria />} />
       </Routes>
     </BrowserRouter>
   );

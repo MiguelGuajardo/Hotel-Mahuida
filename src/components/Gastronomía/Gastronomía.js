@@ -62,7 +62,7 @@ export const Gastronomía = () => {
               ).toFixed(2)}`}</span> */}
               <Link
                 className="boton verde"
-                to={`/gastronomia/${Gastronomía.id}`}
+                to={`/HotelMahuida/gastronomia/${Gastronomía.id}`}
               >
                 VER MÁS
               </Link>

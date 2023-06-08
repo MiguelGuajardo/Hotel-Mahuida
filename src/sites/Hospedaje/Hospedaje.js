@@ -51,7 +51,10 @@ export const Hospedaje = () => {
             <div className="card_text_container">
               <p className="card_title">{hospedaje.title}</p>
 
-              <Link className="boton verde" to={`/hospedaje/${hospedaje.id}`}>
+              <Link
+                className="boton verde"
+                to={`/HotelMahuida/hospedaje/${hospedaje.id}`}
+              >
                 VER MÁS
               </Link>
             </div>
