@@ -66,6 +66,7 @@ export const GastronomiaSingle = () => {
   const title = gastronomiaSelect.map(
     (gastronomiaSingle) => gastronomiaSingle.title
   );
+
   return (
     <div className="gastronomia_single_container">
       <div className="gastronomia_single_image_container">
@@ -89,29 +90,36 @@ export const GastronomiaSingle = () => {
           ))}
         </div>
       </div>
-      <div className="gastronomia_single_price_container">
-        <span className="gastronomia_single_price">
-          $
-          {gastronomiaSelect.map(
-            (gastronomiaSingle) => gastronomiaSingle.price
-          )}
-        </span>
-        <span className="gastronomia_single_cuote">{`3 cuotas sin interés de $${(
-          gastronomiaSelect.map(
-            (gastronomiaSingle) => gastronomiaSingle.price
-          ) / 3
-        ).toFixed(2)}`}</span>
-        <p>
-          Para poder reservar la habitación, es necesario que usted nos contacte
-          mediante el siguiente botón
-        </p>
-        <Link
-          to={`https://wa.me/${process.env.NEXT_PUBLIC_NUMBER_PHONE}`}
-          className="boton verde"
-        >
-          ALQUILAR
-        </Link>
-      </div>
+      {idArr === 1 ? (
+        <h2>
+          El desayuno tipo continental viene incluido con el alquiler de la
+          habitación
+        </h2>
+      ) : (
+        <div className="gastronomia_single_price_container">
+          {/* <span className="gastronomia_single_price">
+            $
+            {gastronomiaSelect.map(
+              (gastronomiaSingle) => gastronomiaSingle.price
+            )}
+          </span>
+          <span className="gastronomia_single_cuote">{`3 cuotas sin interés de $${(
+            gastronomiaSelect.map(
+              (gastronomiaSingle) => gastronomiaSingle.price
+            ) / 3
+          ).toFixed(2)}`}</span>
+          <p>
+            Para poder reservar la habitación, es necesario que usted nos
+            contacte mediante el siguiente botón
+          </p> */}
+          <Link
+            to={`https://wa.me/${process.env.REACT_APP_NUMBER_PHONE}`}
+            className="boton verde"
+          >
+            COMPRAR
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

@@ -71,7 +71,7 @@ export const HospedajeSingle = () => {
           mediante el siguiente botón
         </p>
         <Link
-          to={`https://wa.me/${process.env.NEXT_PUBLIC_NUMBER_PHONE}`}
+          to={`https://wa.me/${process.env.REACT_APP_NUMBER_PHONE}`}
           className="boton verde"
         >
           ALQUILAR

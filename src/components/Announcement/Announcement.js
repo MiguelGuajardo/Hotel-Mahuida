@@ -18,17 +18,11 @@ export const Announcement = () => {
       <div className="announcement_info">
         <Link
           className="link_icon"
-          to={`https://wa.me/${process.env.NEXT_PUBLIC_NUMBER_PHONE}`}
+          to={`https://wa.me/${process.env.REACT_APP_NUMBER_PHONE}`}
         >
           <i className="fab fa-whatsapp announcement_icon"></i>
           <p className="announcement_icon_p">1153450688</p>
         </Link>
-      </div>
-      <div className="announcement_info">
-        <span className="material-symbols-outlined announcement_icon">
-          call
-        </span>
-        <p className="announcement_icon_p">1153450688</p>
       </div>
       <div className="announcement_info">
         <Link
